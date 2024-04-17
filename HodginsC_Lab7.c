@@ -9,18 +9,19 @@
 |
 |--------------------------------------------------------------------------------------------------
 | Program Description:
-|   Program uses linked lists as stacks to convert infix to post fix form math problems
+|   Program uses linked lists as two first in first out queues for happy and angry customers
+| from an outside simulation output file
 |
 |
 |--------------------------------------------------------------------------------------------------
 | Inputs:
-|   No outside inputs. Only program inputs are taken from using scanf("%d", &<variable>)
+|   Inputs recieved from simulation file output ran prior to the lab execution, the files must meet
+| a criteria before being used in the lab.
 |  
 |
 |--------------------------------------------------------------------------------------------------
 | Processing:
-|   Reads data in from file that are entered into stack and output files. Operations are performed on these
-|  lists such as inserting and appending.
+|   Processes input data using bit masking and linked list stuff
 |
 |--------------------------------------------------------------------------------------------------
 | Outputs:
@@ -29,6 +30,7 @@
 |
 |--------------------------------------------------------------------------------------------------
 */
+
 #include "HodginsC_Lab7.h"
 
 int main(){
