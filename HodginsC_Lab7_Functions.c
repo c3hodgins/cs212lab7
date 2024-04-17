@@ -3,29 +3,37 @@
 //-----------------------------------------------------------------------------
 // Function Name: initializeQueue
 // Description:	
-//   This function takes in a queue and initializes the memory to NULL
+//   This function takes in a queue and initializes the memory to NULL if the
+// queue is empty
 //
 //-----------------------------------------------------------------------------
 void initializeQueue(queueType* queue){
-    queue->back = NULL;
-    queue->front = NULL;
+    if (queue!=NULL){
+        queue->back = NULL;
+        queue->front = NULL;
+    }
 }
 
 //-----------------------------------------------------------------------------
 // Function Name: initializeNode
 // Description:	
-//   This function assigns the memory in the structure to NULL
+//   This function assigns the memory in the node to NULL and assigns the
+// pointed node to null if ithe pointer is not already empty
 //
 //-----------------------------------------------------------------------------
-void initializeNode(nodeType** node){
-    *node = NULL; //maybe???
-    (*node)->pNext = NULL;
+void initializeNode(nodeType* node){
+    if (node != NULL) {
+        (node)->pNext = NULL;
+    }
+    node = NULL;
+
 }
 
 //-----------------------------------------------------------------------------
 // Function Name: queueEmpty()
 // Description:	
-//   This function returns whether or not a queue is empty
+//   This function returns whether or not a queue is empty by checking if the 
+// front is null(front becomes the back and is empty)
 //
 //-----------------------------------------------------------------------------
 int queueEmpty(queueType* queue){
@@ -35,7 +43,11 @@ int queueEmpty(queueType* queue){
 //-----------------------------------------------------------------------------
 // Function Name: enqueue()
 // Description:	
-//   This function adds a node to the back of the queue
+//   This function adds a node to the back of the queue by checking if it is 
+// empty or not, if it is empty, assigns the first value into the queue as the
+// front and back. If it is not empty, then it assigns the back to point to the 
+// node to be added, and then assigns the node to point to null, thus becoming
+// the new end
 //
 //-----------------------------------------------------------------------------
 void enqueue(queueType* queue, nodeType* node){
@@ -49,8 +61,9 @@ void enqueue(queueType* queue, nodeType* node){
             //assign the last node to point to our new node
             queue->back->pNext = node;
             //assign the last node to be the new node
+            // assign the new back to point to null
             queue->back = node;
-            //node->pNext = NULL;
+            node->pNext = NULL;
         }
     }
 }
@@ -58,53 +71,54 @@ void enqueue(queueType* queue, nodeType* node){
 //-----------------------------------------------------------------------------
 // Function Name: enqueueNewNode()
 // Description:	
-//   This function adds a node to the back of the queue
+//   This function adds a node to the back of the queue and decideds which
+// queue to add it to based on the reason code passed in.
 //
 //-----------------------------------------------------------------------------
 void enqueueNewNode(queueType* happy,queueType*angry, nodeType* node,uint32_t code){
     //if angry
-    if (code &(1<<7)){
+    if ((code &(1<<7))!=0){
         enqueue(angry,node);
-    }else if(code & (1<<6)){
+    }else if((code & (1<<6))!=0){
         enqueue(happy,node);
     }
 }
 
 //-----------------------------------------------------------------------------
-// Function Name: enqueueNewNode()
+// Function Name: createNodeNode()
 // Description:	
-//   This function adds a node to the back of the queue
+//   This function assigns the values in the node depending on the code passed
+// in that was read from the file
 //
 //-----------------------------------------------------------------------------
 void createNodeNode(nodeType** node, uint32_t code){
-    if (code & (1<<7)){
+    if ((code & (1<<7))!=0){
         //capture the 1st and second bit
-        (*node)->record.reason = (code>>1) & 3;
+        (*node)->record.reason = (code>>1) & 0x0003;
         setAngryMessage(*node);
-    }else if(code&(1<<6)){
-        (*node)->record.reason = (code>>3) & 3;
+    }else if((code&(1<<6))!=0){
+        (*node)->record.reason = (code>>3) & 0x0003;
         setHappyMessage(*node);
     }
-    (*node)->record.ID = (code >> 8) & 0xFF;
+    (*node)->record.ID = (code >> 8) & 0x00FF;
 }
-
 
 //-----------------------------------------------------------------------------
 // Function Name: dequeue()
 // Description:	
-//   This function removes a node from the front of the queue
+//   This function removes a node from the front of the queue if the queue is
+// not empty, and frees the memory of the node. The dequeueing process is
+// similar to pop, where the front of the list is assigned to the node that 
+// it points to.
 //
 //-----------------------------------------------------------------------------
 void dequeue(queueType* queue){
     if (queueEmpty(queue)){
         printf("Queue is already empty\n");
+        queue->back = NULL;
     }else{
         nodeType* pTemp = queue->front;
         queue->front = queue->front->pNext;
-
-        if (queueEmpty(queue)){
-            queue->back = NULL;
-        }
         free(pTemp);
     }
 }
@@ -116,8 +130,8 @@ void dequeue(queueType* queue){
 //
 //-----------------------------------------------------------------------------
 void printTableHeader(queueType* pQueue,FILE* pOutput){
-    fprintf(pOutput,"Customer ID    |    Reason");
-    PrintDivider(pOutput,'-',SCREEN_WIDTH);
+    fprintf(pOutput,"\nCustomer ID    |    Reason\n");
+    PrintDivider(pOutput,'_',SCREEN_WIDTH);
 }
 
 //-----------------------------------------------------------------------------
@@ -127,8 +141,8 @@ void printTableHeader(queueType* pQueue,FILE* pOutput){
 //
 //-----------------------------------------------------------------------------
 void printRowOfData(queueType* queue,FILE* pOutput){
-    fprintf(pOutput,"%d",queue->front->record.ID);
-    fprintf(pOutput,"\t|\t");
+    fprintf(pOutput,"%-15d",queue->front->record.ID);
+    fprintf(pOutput,"|\t");
     fprintf(pOutput,"%s",queue->front->record.message);
 }
 
@@ -136,6 +150,7 @@ void printRowOfData(queueType* queue,FILE* pOutput){
 // Function Name: setAngryMessage()
 // Description:	
 //   This function takes in a node pointer and copies a value into the struct
+// usign strcpy()
 //
 //-----------------------------------------------------------------------------
 void setAngryMessage(nodeType* node){

@@ -11,7 +11,7 @@
 
 // Macros
 #define STAR '*'
-#define SCREEN_WIDTH 65
+#define SCREEN_WIDTH 100
 #define SCHOOL "Binghamton University"
 #define PROGRAMMER "Charles Hodgins"
 #define LAB "Lab 6"
@@ -41,7 +41,7 @@ typedef struct{
 // void push(stackType* stack, nodeType* element);
 // nodeType pop(stackType* stack);
 void initializeQueue(queueType* queue);
-void initializeNode(nodeType** node);
+void initializeNode(nodeType* node);
 int queueEmpty(queueType* queue);
 void enqueue(queueType* queue, nodeType* node);
 void enqueueNewNode(queueType* happy,queueType*angry, nodeType* node,uint32_t code);

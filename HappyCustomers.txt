@@ -1,0 +1,132 @@
+****************************************************************************************************
+                                       Binghamton University
+                                          Charles Hodgins
+                                               Lab 6
+****************************************************************************************************
+
+Customer ID    |    Reason
+____________________________________________________________________________________________________
+1              |	Checkout was a breeze!
+2              |	Got what I needed, very good store!
+4              |	Checkout was a breeze!
+6              |	Smiling customer will be happy to return
+8              |	Smiling customer will be happy to return
+3              |	Checkout was a breeze!
+11             |	Got what I needed, very good store!
+5              |	Got what I needed, very good store!
+12             |	Smiling customer will be happy to return
+7              |	Smiling customer will be happy to return
+13             |	Got what I needed, very good store!
+14             |	Smiling customer will be happy to return
+15             |	Checkout was a breeze!
+9              |	AWESOME SERVICE! Can’t wait to come back.
+17             |	Checkout was a breeze!
+19             |	Smiling customer will be happy to return
+22             |	Checkout was a breeze!
+10             |	Checkout was a breeze!
+16             |	Got what I needed, very good store!
+18             |	AWESOME SERVICE! Can’t wait to come back.
+24             |	Got what I needed, very good store!
+26             |	AWESOME SERVICE! Can’t wait to come back.
+20             |	Smiling customer will be happy to return
+27             |	Got what I needed, very good store!
+21             |	AWESOME SERVICE! Can’t wait to come back.
+29             |	Checkout was a breeze!
+31             |	Checkout was a breeze!
+23             |	Smiling customer will be happy to return
+25             |	Smiling customer will be happy to return
+33             |	AWESOME SERVICE! Can’t wait to come back.
+28             |	AWESOME SERVICE! Can’t wait to come back.
+30             |	Smiling customer will be happy to return
+36             |	Got what I needed, very good store!
+37             |	Got what I needed, very good store!
+39             |	Got what I needed, very good store!
+41             |	Got what I needed, very good store!
+32             |	Checkout was a breeze!
+34             |	Smiling customer will be happy to return
+44             |	Got what I needed, very good store!
+46             |	Smiling customer will be happy to return
+35             |	Checkout was a breeze!
+38             |	Got what I needed, very good store!
+40             |	AWESOME SERVICE! Can’t wait to come back.
+47             |	Checkout was a breeze!
+42             |	Got what I needed, very good store!
+43             |	Smiling customer will be happy to return
+45             |	Checkout was a breeze!
+50             |	Smiling customer will be happy to return
+51             |	Smiling customer will be happy to return
+53             |	AWESOME SERVICE! Can’t wait to come back.
+48             |	Checkout was a breeze!
+49             |	Got what I needed, very good store!
+55             |	Got what I needed, very good store!
+52             |	Checkout was a breeze!
+54             |	AWESOME SERVICE! Can’t wait to come back.
+56             |	AWESOME SERVICE! Can’t wait to come back.
+57             |	AWESOME SERVICE! Can’t wait to come back.
+59             |	Got what I needed, very good store!
+64             |	AWESOME SERVICE! Can’t wait to come back.
+58             |	Got what I needed, very good store!
+65             |	Checkout was a breeze!
+60             |	Checkout was a breeze!
+61             |	Got what I needed, very good store!
+62             |	Smiling customer will be happy to return
+66             |	Checkout was a breeze!
+63             |	Checkout was a breeze!
+67             |	Smiling customer will be happy to return
+68             |	Checkout was a breeze!
+70             |	AWESOME SERVICE! Can’t wait to come back.
+71             |	Checkout was a breeze!
+72             |	AWESOME SERVICE! Can’t wait to come back.
+69             |	Checkout was a breeze!
+74             |	Got what I needed, very good store!
+76             |	Smiling customer will be happy to return
+73             |	Checkout was a breeze!
+75             |	AWESOME SERVICE! Can’t wait to come back.
+77             |	Checkout was a breeze!
+78             |	Checkout was a breeze!
+79             |	Got what I needed, very good store!
+81             |	Checkout was a breeze!
+83             |	AWESOME SERVICE! Can’t wait to come back.
+86             |	AWESOME SERVICE! Can’t wait to come back.
+80             |	Smiling customer will be happy to return
+89             |	AWESOME SERVICE! Can’t wait to come back.
+82             |	Checkout was a breeze!
+88             |	Smiling customer will be happy to return
+90             |	AWESOME SERVICE! Can’t wait to come back.
+91             |	Smiling customer will be happy to return
+92             |	Got what I needed, very good store!
+95             |	Checkout was a breeze!
+101            |	AWESOME SERVICE! Can’t wait to come back.
+93             |	Smiling customer will be happy to return
+102            |	Got what I needed, very good store!
+94             |	Got what I needed, very good store!
+103            |	AWESOME SERVICE! Can’t wait to come back.
+104            |	AWESOME SERVICE! Can’t wait to come back.
+106            |	Smiling customer will be happy to return
+105            |	Smiling customer will be happy to return
+115            |	Checkout was a breeze!
+113            |	AWESOME SERVICE! Can’t wait to come back.
+114            |	AWESOME SERVICE! Can’t wait to come back.
+125            |	Checkout was a breeze!
+117            |	Checkout was a breeze!
+118            |	Got what I needed, very good store!
+129            |	AWESOME SERVICE! Can’t wait to come back.
+136            |	Got what I needed, very good store!
+137            |	Got what I needed, very good store!
+149            |	Checkout was a breeze!
+131            |	Smiling customer will be happy to return
+150            |	AWESOME SERVICE! Can’t wait to come back.
+132            |	Got what I needed, very good store!
+151            |	Smiling customer will be happy to return
+133            |	Checkout was a breeze!
+160            |	Checkout was a breeze!
+134            |	Smiling customer will be happy to return
+169            |	Got what I needed, very good store!
+135            |	Checkout was a breeze!
+170            |	AWESOME SERVICE! Can’t wait to come back.
+143            |	Got what I needed, very good store!
+171            |	Smiling customer will be happy to return
+156            |	Checkout was a breeze!
+157            |	Got what I needed, very good store!
+158            |	Got what I needed, very good store!
+166            |	AWESOME SERVICE! Can’t wait to come back.

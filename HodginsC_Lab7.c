@@ -34,26 +34,29 @@
 int main(){
     queueType happy;
     queueType angry;
-    nodeType* newRecord;
+    nodeType* newRecord = NULL;
 
-    // initializeNode(&newRecord);
+    initializeNode(newRecord);
     initializeQueue(&happy);
     initializeQueue(&angry);
 
-    char readInCode[10];
+    char readInCode[12];
     uint32_t code;
 
-    FILE* pInput; 
-    FILE* pOutHappy;
-    FILE* pOutAngry;
-
-    printf("POOP\n");
-
+    FILE* pInput = NULL; 
+    FILE* pOutHappy = NULL;
+    FILE* pOutAngry = NULL;
     pInput = fopen("Lab7_Input.txt","r");
     pOutHappy = fopen("HappyCustomers.txt", "w");
     pOutAngry = fopen("AngryCustomers.txt", "w");
+
+    PrintHeader(pOutAngry);
+    PrintHeader(pOutHappy);
+
+    printTableHeader(&happy,pOutHappy);
+    printTableHeader(&angry,pOutAngry);
     if (pInput != NULL && pOutHappy != NULL && pOutHappy != NULL){
-        while(fgets(readInCode,10,pInput)!=NULL){
+        while(fgets(readInCode,12,pInput)!=NULL){
             code = atoi(readInCode);
 
             newRecord = (nodeType*)malloc(sizeof(nodeType));

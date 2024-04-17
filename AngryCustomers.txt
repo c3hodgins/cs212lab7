@@ -1,0 +1,57 @@
+****************************************************************************************************
+                                       Binghamton University
+                                          Charles Hodgins
+                                               Lab 6
+****************************************************************************************************
+
+Customer ID    |    Reason
+____________________________________________________________________________________________________
+84             |	<yawn> I’m too lazy to wait in line. 
+85             |	<yawn> I’m too lazy to wait in line. 
+87             |	<yawn> I’m too lazy to wait in line. 
+96             |	<yawn> I’m too lazy to wait in line. 
+97             |	<yawn> I’m too lazy to wait in line. 
+98             |	I’m too busy for this! Maybe I come back later.
+99             |	I’m too busy for this! Maybe I come back later.
+100            |	Too much to do, too little time! 
+107            |	I’m too busy for this! Maybe I come back later.
+108            |	This store is terrible, I’m never coming back!
+109            |	Too much to do, too little time! 
+110            |	Too much to do, too little time! 
+111            |	<yawn> I’m too lazy to wait in line. 
+112            |	<yawn> I’m too lazy to wait in line. 
+116            |	Too much to do, too little time! 
+119            |	Too much to do, too little time! 
+120            |	Too much to do, too little time! 
+121            |	<yawn> I’m too lazy to wait in line. 
+122            |	Too much to do, too little time! 
+123            |	Too much to do, too little time! 
+124            |	Too much to do, too little time! 
+126            |	<yawn> I’m too lazy to wait in line. 
+127            |	This store is terrible, I’m never coming back!
+128            |	This store is terrible, I’m never coming back!
+130            |	<yawn> I’m too lazy to wait in line. 
+138            |	This store is terrible, I’m never coming back!
+139            |	This store is terrible, I’m never coming back!
+140            |	This store is terrible, I’m never coming back!
+141            |	I’m too busy for this! Maybe I come back later.
+142            |	I’m too busy for this! Maybe I come back later.
+144            |	This store is terrible, I’m never coming back!
+145            |	This store is terrible, I’m never coming back!
+146            |	<yawn> I’m too lazy to wait in line. 
+147            |	<yawn> I’m too lazy to wait in line. 
+148            |	This store is terrible, I’m never coming back!
+152            |	<yawn> I’m too lazy to wait in line. 
+153            |	<yawn> I’m too lazy to wait in line. 
+154            |	<yawn> I’m too lazy to wait in line. 
+155            |	I’m too busy for this! Maybe I come back later.
+159            |	This store is terrible, I’m never coming back!
+161            |	I’m too busy for this! Maybe I come back later.
+162            |	This store is terrible, I’m never coming back!
+163            |	I’m too busy for this! Maybe I come back later.
+164            |	This store is terrible, I’m never coming back!
+165            |	<yawn> I’m too lazy to wait in line. 
+167            |	This store is terrible, I’m never coming back!
+168            |	<yawn> I’m too lazy to wait in line. 
+172            |	This store is terrible, I’m never coming back!
+173            |	I’m too busy for this! Maybe I come back later.
