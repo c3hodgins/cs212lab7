@@ -32,17 +32,25 @@ typedef struct node{
     struct node* pNext;
 } nodeType;
 
-typedef struct queue{   
+typedef struct{   
     nodeType* front;
     nodeType* back;
-}stackType;
+}queueType;
 
 // Prototypes
-void push(stackType* stack, nodeType* element);
-nodeType pop(stackType* stack);
-int returnPriority(char symbol);
-void openDataFiles(FILE** inputFile, char* inputName, FILE** outputFile, char* outputName);
-void closeDataFiles(FILE** inputFile, FILE** outputFile );
+// void push(stackType* stack, nodeType* element);
+// nodeType pop(stackType* stack);
+void initializeQueue(queueType* queue);
+void initializeNode(nodeType** node);
+int queueEmpty(queueType* queue);
+void enqueue(queueType* queue, nodeType* node);
+void enqueueNewNode(queueType* happy,queueType*angry, nodeType* node,uint32_t code);
+void createNodeNode(nodeType** node, uint32_t code);
+void dequeue(queueType* queue);
+void printTableHeader(queueType* pQueue,FILE* pOutput);
+void printRowOfData(queueType* queue,FILE* pOutput);
+void setAngryMessage(nodeType* node);
+void setHappyMessage(nodeType* node);
 
 //Foos Function Prototypes
 void PrintHeader(FILE* pOutput);
